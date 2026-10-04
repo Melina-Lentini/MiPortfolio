@@ -91,8 +91,10 @@ export default function Hero() {
         {/* CTA Buttons */}
         <div className="flex flex-wrap items-center justify-center gap-3">
           <a
-            href="#experience"
-            onClick={e => { e.preventDefault(); document.querySelector('#experience')?.scrollIntoView({ behavior: 'smooth' }); }}
+            href="/CV_MelinaLentini.pdf"
+            download="CV_MelinaLentini.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-fuchsia-500 hover:bg-fuchsia-400 text-white font-medium text-sm transition-all duration-200 shadow-lg shadow-fuchsia-500/25 hover:shadow-fuchsia-500/40 hover:-translate-y-0.5"
           >
             <FileText size={16} />
